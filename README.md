@@ -35,21 +35,11 @@ A modern, full-stack user profile management application built with Docker Compo
 └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
 ```
 
-```
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│   Frontend  │    │   Backend   │    │ PostgreSQL  │    │   pgAdmin   │
-│   React     │◄──►│   FastAPI   │◄──►│   Database  │◄──►│   Admin UI  │
-│   Port 3000 │    │   Port 8000 │    │   Port 5432 │    │   Port 5050 │
-└─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
-```
-
 ## 🚀 Quick Start
 
-### Prerequisites
-- **Docker** (version 20.10 or higher)
-- **Docker Compose** (version 2.0 or higher)
+**Prerequisites**: Docker (v20.10+) and Docker Compose (v2.0+)
 
-### Installation & Setup
+**Installation**:
 
 1. **Clone the repository**
    ```bash
@@ -71,37 +61,13 @@ A modern, full-stack user profile management application built with Docker Compo
    | **pgAdmin** | http://localhost:5050 | Email: `admin@admin.com`<br>Password: `admin` |
    | **PostgreSQL** | localhost:5432 | User: `postgres`<br>Password: `password`<br>Database: `userprofiles` |
 
-### First Time Setup
-1. Wait for all services to start (this may take 2-3 minutes on first run)
-2. Open http://localhost:3000 to access the frontend
-3. Create your first user profile using the "Add User" button
-4. View the database at http://localhost:5050 (pgAdmin)
+**First Steps**:
+1. Wait 2-3 minutes for services to start
+2. Open http://localhost:3000
+3. Create your first user profile
+4. View database at http://localhost:5050
 
-## 📋 Features
 
-### 🎨 User Profile Management
-- ✅ **Create** new user profiles with name, email, and bio
-- ✅ **View** all user profiles in a beautiful responsive card layout
-- ✅ **Edit** existing user profiles with real-time form validation
-- ✅ **Delete** user profiles with confirmation
-- ✅ **Search & Filter** (coming soon)
-- ✅ **Responsive Design** works on desktop, tablet, and mobile
-
-### ⚡ Backend API
-- ✅ **RESTful CRUD** endpoints with proper HTTP status codes
-- ✅ **Comprehensive Logging** for all API requests and errors
-- ✅ **Error Handling** with detailed error messages
-- ✅ **CORS Support** for frontend integration
-- ✅ **Health Check** endpoint for monitoring
-- ✅ **Auto-generated Documentation** at `/docs` (Swagger UI)
-- ✅ **Input Validation** using Pydantic schemas
-
-### 🗄️ Database
-- ✅ **PostgreSQL 16** with persistent storage
-- ✅ **Automatic Table Creation** on startup
-- ✅ **pgAdmin 4** for database management
-- ✅ **Auto-configured Connection** with saved credentials
-- ✅ **Data Persistence** across container restarts
 
 ## 🔧 API Reference
 
